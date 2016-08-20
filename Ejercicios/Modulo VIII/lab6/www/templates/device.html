@@ -1,0 +1,13 @@
+<ion-view title="Device" align-title="center" id="page1">
+    <ion-content padding="true" class="has-header">
+        <button ng-click="getDeviceInformation()" id="device-button1" class=" button button-positive  button-block ">Show Info</button>
+        <ion-list id="device-list1">
+            <ion-item id="device-list-item5">{{ device }}</ion-item>
+            <ion-item id="device-list-item6">{{ cordova }}</ion-item>
+            <ion-item id="device-list-item7">{{ model }}</ion-item>
+            <ion-item id="device-list-item8">{{ platform }}</ion-item>
+            <ion-item id="device-list-item9">{{ uuid }}</ion-item>
+            <ion-item id="device-list-item10">{{ version }}</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

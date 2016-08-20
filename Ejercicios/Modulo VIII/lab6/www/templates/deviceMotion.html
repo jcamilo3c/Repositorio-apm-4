@@ -1,0 +1,12 @@
+<ion-view title="Device Motion" align-title="center" id="page2">
+    <ion-content padding="true" class="has-header">
+        <button ng-click="getCurrentDeviceMotion()" id="deviceMotion-button2" class=" button button-positive  button-block ">Get Info</button>
+        <ion-list id="deviceMotion-list2">
+            <ion-item id="deviceMotion-list-item9">{{ x }}</ion-item>
+            <ion-item id="deviceMotion-list-item10">{{ y }}</ion-item>
+            <ion-item id="deviceMotion-list-item11">{{ z }}</ion-item>
+            <ion-item id="deviceMotion-list-item12">{{ timeStamp }}</ion-item>
+        </ion-list>
+        <button id="deviceMotion-button3" class=" button button-assertive  button-block ">Stop</button>
+    </ion-content>
+</ion-view>

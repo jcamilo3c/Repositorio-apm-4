@@ -1,0 +1,17 @@
+<ion-view view-title="Form">
+  <ion-content>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="email" placeholder="email" ng-model="correo">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="password" ng-model="clave">
+      </label>
+    </div>
+    <button ng-click="enviar(correo,clave)" class="button button-block button-positive">
+      Save
+    </button>
+
+  </ion-content>
+</ion-view>

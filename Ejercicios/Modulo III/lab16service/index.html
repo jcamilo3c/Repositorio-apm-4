@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="angular_ajax">
+<head>
+	<title>Lab16</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<h1>AJAX AngularJS</h1>
+
+	<div ng-controller="studentController">
+		<table>
+		   <tr ng-repeat="country in countries">
+		      <td>{{ country.name }}</td>
+		   </tr>
+		</table>
+	</div>
+    <script>
+       angular.module('angular_ajax', [])
+              .controller('studentController', function($scope, $http){
+              	var url = "http://services.groupkt.com/country/get/all";
+              	$http.get(url).success(function(response){
+
+              		console.log(response);
+              		
+              		$scope.countries = response.RestResponse.result;
+              	});
+              });
+    </script>
+</body>
+</html>

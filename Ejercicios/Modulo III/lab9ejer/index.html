@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="appController">
+		<h1>Suma</h1>
+		<p>Ingrese el primer numero: <input type="number" ng-model="a"></p>
+		<p>Ingrese el segundo numero: <input type="number" ng-model="b"></p>
+		<br>
+		<!--<p>La suma es: {{ a+b }}</p>-->
+		<button ng-click="suma()">Suma</button>
+		<p>La suma es: <input type="number" ng-model="result"></p>
+	</div>
+
+	
+
+	<script type="text/javascript">
+	angular.module('app', [])
+		   .controller('appController', function($scope){
+		   		$scope.a=0;
+		   		$scope.b=0;
+		   		$scope.suma=function(){ /* Declarar funcion asi para que se comunique con todo*/
+		   	console.log("x");
+		   	/*var a, b;*  Estas variables solo se comunica aca */
+		   	$scope.result=$scope.a + $scope.b;
+		   }
+		   });
+
+	</script>
+
+
+</body>
+</html>

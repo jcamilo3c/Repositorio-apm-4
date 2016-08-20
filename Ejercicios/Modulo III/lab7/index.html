@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-app>
+		<h1>Digite los campos:</h1>
+		<p>Nombre: <input  type="text" ng-model="name"></p>
+		<p>Apellido: <input type="text" ng-model="last"></p>
+		<p>Telefono: <input type="text" ng-model="phone"></p>
+		<br>
+		<ul>
+			<li>Su nombre es: <span ng-bind="name"></span></li>
+			<li>Su apellido es: <span ng-bind="last"></span></li>
+			<li>Su telefono es: <span ng-bind="phone"></span></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="angular.min.js"></script>
+</body>
+</html>
