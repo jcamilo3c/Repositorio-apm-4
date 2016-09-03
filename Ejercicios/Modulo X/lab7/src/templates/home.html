@@ -1,0 +1,29 @@
+<label>
+    Nombre del producto:
+</label>
+
+<input type="text" placeholder="Producto" [(ngModel)]="nombre">
+
+<label>
+    Tipo:
+</label>
+
+<input type="text" placeholder="Producto" [(ngModel)]="tipo">
+
+<label>
+    Precio:
+</label>
+
+<input type="number" placeholder="Producto" [(ngModel)]="precio">
+
+<label>
+    Cantidad:
+</label>
+
+<input type="number" placeholder="Producto" [(ngModel)]="cantidad">
+
+
+<h1>Detalles del producto:</h1>
+<h3>Producto: {{ nombre }} {{ tipo }}</h3>
+<h3>Precio: {{ precio }}</h3>
+<h3>Cantidad: {{ cantidad }}</h3>
